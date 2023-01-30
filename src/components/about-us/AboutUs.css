@@ -1,0 +1,9 @@
+.accordion-container h1 {
+  font-family: "Henny Penny";
+  color:#0dcaf0;
+  text-align: center;
+}
+.accordion-header button:focus-within {
+  color: #0dcaf0 !important;
+  background-color: #212529 !important;
+}
