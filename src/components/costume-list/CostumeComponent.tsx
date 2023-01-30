@@ -19,7 +19,7 @@ const CostumeComponent = () => {
 
   return (
     <div>
-      <Container className="p-xl-3 d-flex justify-content-end">
+      <Container className="mt-3 d-flex justify-content-end">
         <Button
           className="btn btn-info text-light"
           onClick={() => setShowOptions(!showOptions)}
@@ -48,10 +48,10 @@ const CostumeComponent = () => {
           </div>
         )}
       </Container>
-      <Container className="p-xl-3">
-        <h2 className="text-center p-xl-4">My Chores Costume List</h2>
+      <Container>
+        <h2 className="text-center p-xl-1">My Chores Costume List</h2>
         {filteredChores.length > 0 ? (
-          <div className="d-flex flex-wrap">
+          <div className="d-flex flex-wrap justify-content-center align-items-center ">
             {filteredChores.map((c) => (
               <CardItem {...c} key={c.id} />
             ))}
