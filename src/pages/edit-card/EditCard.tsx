@@ -1,7 +1,7 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { useState } from "react";
-import { Card, editCard} from "../../features/cards/cardsSlice";
+import { Card, editCard } from "../../features/cards/cardsSlice";
 
 const EditCard = () => {
   //get the id from the url:
@@ -75,7 +75,7 @@ const EditCard = () => {
             tag: cardToEdit.tag,
             name: name,
             description: description,
-            isFavorite:false,
+            isFavorite: false,
           };
           dispatch(editCard(card));
           // send the user back to home page:

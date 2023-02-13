@@ -1,18 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { chores } from "../../data/cards";
 
-export type Tag =
-  | "Daily"
-  | "Monthly"
-  | "Seasonal"
-  | "Enterior"
-  | "Exterior";
+export type Tag = "Daily" | "Monthly" | "Seasonal" | "Enterior" | "Exterior";
 
 export type Card = {
   id: string;
   name: string;
   description: string;
-  tag: "Daily" | "Monthly" | "Seasonal" | "Enterior" | "Exterior";
+  tag: Tag;
   isFavorite: boolean;
 };
 
@@ -34,15 +29,13 @@ export const cardsSlice = createSlice({
       state.cards.push(action.payload);
     },
     editCard: (state, action: PayloadAction<Card>) => {
-      //get the card from action.payload
-      const cardToEdit = action.payload;
-
-      //find the index of the card to edit:
-      const index = state.cards.findIndex((c) => c.id === action.payload.id);
-
-      //replace the card at index with:
-      state.cards[index] = cardToEdit;
+      const { id, name, description, tag, isFavorite } = action.payload;
+      const cardIndex = state.cards.findIndex((card) => card.id === id);
+      if (cardIndex >= 0) {
+        state.cards[cardIndex] = { id, name, description, tag, isFavorite };
+      }
     },
+
     deleteCard: (state, action: PayloadAction<string>) => {
       //action.payload = id of the card to remove
       const index = state.cards.findIndex((c) => c.id === action.payload);
@@ -51,8 +44,8 @@ export const cardsSlice = createSlice({
       state.cards.splice(index, 1);
     },
     //add to costume list
-     toggleFavorite:(state, action: PayloadAction<string>) => {
-       const index = state.cards.findIndex((c) => c.id === action.payload);
+    toggleFavorite: (state, action: PayloadAction<string>) => {
+      const index = state.cards.findIndex((c) => c.id === action.payload);
 
       if (index !== -1) {
         state.cards[index].isFavorite = !state.cards[index].isFavorite;
@@ -61,5 +54,6 @@ export const cardsSlice = createSlice({
   },
 });
 
-export const { addCard, deleteCard, editCard,toggleFavorite } = cardsSlice.actions;
+export const { addCard, deleteCard, editCard, toggleFavorite } =
+  cardsSlice.actions;
 export default cardsSlice.reducer;
