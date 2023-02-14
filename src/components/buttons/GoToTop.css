@@ -1,0 +1,24 @@
+.go-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  z-index: 999;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #6c757d;
+  box-shadow: 0 0.2em 0.8em rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.go-to-top svg:hover {
+  color: #5c636a;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.go-to-top svg {
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+}
