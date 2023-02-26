@@ -22,9 +22,8 @@ const CardItem = (props: Card) => {
         {props.isFavorite && <BiTask style={{ fontSize: "30px" }} />}
       </button>
       <div style={{ position: "relative", height: "100%" }}>
-        <h2>{props.name}</h2>
-        <hr />
-        <p>{props.tag}</p>
+        <h2 className="cardTitle">{props.name}</h2>
+        <br />
       </div>
       <div style={{ position: "absolute", bottom: 20, width: "100%" }}>
         <button

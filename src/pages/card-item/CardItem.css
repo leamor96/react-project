@@ -1,6 +1,15 @@
 .card-size {
- width: 20rem;
-  min-height: 20rem;
+  width: 18rem;
+  height: 12rem !important; 
+     cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.card-size:hover{
+  transform: scale(1.05);
+}
+.cardTitle {
   overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }
 

@@ -7,18 +7,16 @@ import reportWebVitals from "./reportWebVitals";
 import "./themed-bootstrap.scss";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { IconContext } from "react-icons";
+
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
 root.render(
   <Provider store={store}>
-  {/*   <IconContext.Provider value={{color:'blue',size:'5rem'}}> */}
       <BrowserRouter>
         <App />
       </BrowserRouter>
-  {/*   </IconContext.Provider> */}
   </Provider>
 );
 

@@ -1,0 +1,10 @@
+section img{
+  border-radius: 0.3rem;
+box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(136, 136, 136, 0.3) 0px 30px 60px -30px;
+}
+
+.footerText{
+    text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: black;
+}

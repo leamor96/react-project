@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
 
  h3, h4, h5, h6{
@@ -13,7 +14,8 @@
 }
 
 h1,h2{
-   font-family: 'Concert One', cursive;
+  font-family: 'Tilt Warp', cursive;
+  color: #343a40;
    margin-bottom: 0.5rem;
 }
 p{

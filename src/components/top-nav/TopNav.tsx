@@ -30,9 +30,9 @@ const TopNav = () => {
               <HiOutlineClipboardList />
               Chores
             </NavLink>
-            <NavLink className="nav-link" to="/costumelist">
+            <NavLink className="nav-link" to="/customlist">
               <CgUserList />
-              My Costume List
+              My Custom-List
             </NavLink>
           </Nav>
         </Navbar.Collapse>

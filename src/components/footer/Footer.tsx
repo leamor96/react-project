@@ -3,121 +3,56 @@ import {
   MDBContainer,
   MDBCol,
   MDBRow,
-  MDBRipple,
 } from "mdb-react-ui-kit";
-import windows from "../../images/windows.jpg"
-import blinds from "../../images/blinds.jpg"
-import lawn from "../../images/lawn.jpg"
-import tools from "../../images/tools.jpg"
-import workspace from "../../images/workspace.jpg"
+import windows from "../../images/windows.jpg";
+import blinds from "../../images/blinds.jpg";
+import lawn from "../../images/lawn.jpg";
+import tools from "../../images/tools.jpg";
+import workspace from "../../images/workspace.jpg";
 import house from "../../images/house.jpg";
+import "./Footer.css";
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <MDBFooter
-      className="text-center text-white bg-dark">
+    <MDBFooter className="text-center text-white bg-dark">
       <MDBContainer className="p-4">
-        <section className="">
+        <section>
           <MDBRow>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={windows} className="w-100" alt="windows"/>
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={windows} className="w-100" alt="windows" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={workspace} className="w-100" alt="workspace" />
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={workspace} className="w-100" alt="workspace" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={tools} className="w-100" alt="tools"/>
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={tools} className="w-100" alt="tools" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={lawn} className="w-100" alt="lawn"/>
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={lawn} className="w-100" alt="lawn" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={house} className="w-100" alt="house"/>
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={house} className="w-100" alt="house" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <MDBRipple
-                rippleColor="light"
-                className="bg-image hover-overlay shadow-1-strong rounded"
-              >
-                <img src={blinds} className="w-100" alt="blinds" />
-                <a href="#!">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
-                  ></div>
-                </a>
-              </MDBRipple>
+              <img src={blinds} className="w-100" alt="blinds" />
             </MDBCol>
           </MDBRow>
         </section>
       </MDBContainer>
 
       <div
-        className="text-center p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-      >
-        © 2023 Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/">
-          Lea Ohayon
+        className="text-center p-3 footerText">
+        © 2023 Copyright: Lea Ohayon
+        <a
+          href="https://www.linkedin.com/in/lea-ohayon-0938ab265"
+          className="p-2"
+        >
+          <BsLinkedin className="mb-1" style={{fontSize:"20px"}} />
         </a>
       </div>
     </MDBFooter>
   );
-}
+};
 
-export default Footer
+export default Footer;

@@ -49,16 +49,16 @@ const CostumeComponent = () => {
         )}
       </Container>
       <Container>
-        <h2 className="text-center p-xl-1">My Chores Costume List</h2>
+        <h2 className="text-center p-xl-1">My Chores Custom List</h2>
         {filteredChores.length > 0 ? (
-          <div className="d-flex flex-wrap justify-content-center align-items-center ">
+          <div className="d-flex flex-wrap justify-content-center">
             {filteredChores.map((c) => (
               <CardItem {...c} key={c.id} />
             ))}
           </div>
         ) : (
           <div className="text-center p-xl-4">
-            Sorry, there aren't any {selectedTag || "All"} chores yet.
+            Sorry, there aren't any {selectedTag || "Custom"} chores yet.
           </div>
         )}
       </Container>

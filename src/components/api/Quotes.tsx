@@ -14,7 +14,7 @@ const Quotes = () => {
     getQuotes();
   }, []);
   return (
-    <div className="quoteContainer m-1">
+    <div className="quoteContainer">
       <div className="quote">
         <p>"{quotes.text}"</p>
         <p>{quotes.author}</p>

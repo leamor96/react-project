@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+   position: relative;
+  z-index: 1;
 }
 
 .quote {
@@ -9,9 +11,9 @@
   max-width: 30rem;
   min-height: 1rem;
   padding: 1.5rem;
-  background: #98A2C1;
+  background: #97b521;
  border-radius: 0.3rem 0.3rem 0 0;
-  box-shadow: 0.5rem 0.5rem 0.125rem rgba(0, 0, 0, 0.2);
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,19 +25,20 @@
 
 .btnQuote {
   padding: 0.5rem 1.5rem;
-  background:#DDB300;
+  background:#636f7f;
   border-radius: 0.3rem;
   font-size: 1.125rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #495057;
+  color: #fff;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .btnQuote:hover {
-  background: #f4c24f;
+  background: #0dcaf0;
+  color: #414141;
 }
 
 p{

@@ -3,13 +3,6 @@ import home from "../../lottie/home.json";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 
-const myStyle = {
-  backgroundImage:
-    "url('https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png')",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
-
 const HeroSection = () => {
   return (
     <Container className="mt-4">

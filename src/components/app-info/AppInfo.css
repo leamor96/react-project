@@ -1,0 +1,17 @@
+.card{
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-sizing {
+  min-height:100%;
+}
+
+.text-left {
+  text-align: left; 
+  font-weight:bold;
+}
+
+.card-image {
+  object-fit: cover;
+  object-position:center;
+}
+
