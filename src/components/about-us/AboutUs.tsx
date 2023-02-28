@@ -24,7 +24,7 @@ const AboutUs = () => {
             <Accordion.Header className="accordion-header">
               Why a household chores list is important?
             </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="accordionBody">
               A household chores list helps you and the members of your
               household put upkeep on autopilot. Not only does creating one
               ensure that everything gets done on time, it also takes the
@@ -39,7 +39,7 @@ const AboutUs = () => {
             <Accordion.Header>
               How to create a household chores list?
             </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="accordionBody">
               Whether you live alone, with a partner, or with roommates, the
               process for creating a chore list is pretty consistent: You
               compile a comprehensive list of all the tidying and cleaning tasks
@@ -50,7 +50,7 @@ const AboutUs = () => {
             <Accordion.Header>
               What to include on a household chores list?
             </Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="accordionBody">
               You’ll want to include both personal chores and communal chores.
               Personal chores are things you need to do to keep your own space
               clean and tidy; communal chores are those that go towards the
