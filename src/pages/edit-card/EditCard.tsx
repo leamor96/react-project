@@ -1,26 +1,20 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { useState } from "react";
-import { Card, editCard } from "../../features/cards/cardsSlice";
+import { Card, editCard, Tag } from "../../features/cards/cardsSlice";
 
 const EditCard = () => {
-  //get the id from the url:
   const { id } = useParams();
   const nav = useNavigate();
-  //get all the cards from the store:
   const cards = useAppSelector((state) => state.cards.cards);
 
-  //dispatch actions:
   const dispatch = useAppDispatch();
-
   const cardToEdit = cards.find((c) => c.id === id);
-
   const [name, setName] = useState(cardToEdit?.name ?? "");
   const [description, setDescription] = useState(cardToEdit?.description ?? "");
   const [tag, setTag] = useState(cardToEdit?.tag ?? "");
 
   if (cardToEdit === undefined) {
-    // 404 page is better:
     return <Navigate to="/" />;
   }
 
@@ -72,10 +66,10 @@ const EditCard = () => {
           //construct the edited Card object:
           const card: Card = {
             id: cardToEdit.id,
-            tag: cardToEdit.tag,
+            tag: tag as Tag,
             name: name,
             description: description,
-            isFavorite: false,
+            isFavorite: cardToEdit.isFavorite,
           };
           dispatch(editCard(card));
           // send the user back to home page:

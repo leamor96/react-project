@@ -38,19 +38,31 @@ const CardItem = (props: Card) => {
         <button
           className="btn btn-dark m-1"
           onClick={() => {
-            Swal.fire({
-              title: "Are you sure you want to delete this?",
-              showDenyButton: true,
-              confirmButtonText: "Yes",
-              denyButtonText: `No`,
-            }).then((result) => {
-              if (result.isConfirmed) {
-                dispatch(deleteCard(props.id));
-                Swal.fire("Deleted!", "", "success");
-              } else if (result.isDenied) {
-                Swal.fire("Chore not deleted", "", "info");
-              }
-            });
+           Swal.fire({
+             title: "Are you sure you want to delete this?",
+             showDenyButton: true,
+             confirmButtonText: "Yes",
+             denyButtonText: `No`,
+             confirmButtonColor: "#7f91b0",
+             denyButtonColor: "black",
+             showCancelButton: false,
+           }).then((result) => {
+             if (result.isConfirmed) {
+               dispatch(deleteCard(props.id));
+               Swal.fire({
+                 title: "Deleted!",
+                 icon: "success",
+                 confirmButtonColor: "#0dcaf0",
+               });
+             } else if (result.isDenied) {
+               Swal.fire({
+                 title: "Chore not deleted",
+                 icon: "info",
+                 confirmButtonColor: "#0dcaf0",
+               });
+             }
+           });
+
           }}
         >
           <BsTrash />

@@ -9,25 +9,19 @@ import Lottie from "lottie-react";
 import { Accordion } from "react-bootstrap";
 import "./AboutUs.css"
 
-/* const myStyle = {
-  backgroundImage:
-    "url('https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png')",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-}; */
 
 const AboutUs = () => {
   return (
-    <Container className="p-xl-5">
+    <Container className="p-xl-5 mt-3 mt-md-0">
       <Row className="text-center p-xl-4">
         <h1>About Us</h1>
         <p>
           HOUSEkeep helps you orgenize a costume household chores list to make
           sure you maintain your house properly.
         </p>
-        <Accordion className="accordion-container shadow-none">
-          <Accordion.Item eventKey="0" className="shadow-none">
-            <Accordion.Header className="accordion-header shadow-none">
+        <Accordion className="accordion-container">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header className="accordion-header">
               Why a household chores list is important?
             </Accordion.Header>
             <Accordion.Body>
@@ -71,12 +65,9 @@ const AboutUs = () => {
         </Accordion>
       </Row>
 
-
-
-
       <Row>
         <Col sm={4}>
-          <Lottie animationData={repair} />
+          <Lottie animationData={repair} className="desktop" />
         </Col>
         <Col sm={8} className="p-5 mt-4">
           <h2>Home Repair & Maintenance</h2>
@@ -87,6 +78,9 @@ const AboutUs = () => {
             when tackling a home improvement project. Know when it pays to call
             a professional.
           </h5>
+        </Col>
+        <Col sm={4}>
+          <Lottie animationData={repair} className="mobile" />
         </Col>
       </Row>
       <Row>
@@ -106,7 +100,7 @@ const AboutUs = () => {
       </Row>
       <Row>
         <Col sm={3} className="mt-4">
-          <Lottie animationData={painting} />
+          <Lottie animationData={painting} className="desktop" />
         </Col>
         <Col sm={9} className="p-5 mt-3">
           <h2>Exterior & Enterior Painting</h2>
@@ -118,6 +112,9 @@ const AboutUs = () => {
             Breaking this sprawling job into smaller, easily manageable
             components is the key to getting this project done efficiently.
           </h5>
+        </Col>
+        <Col sm={3} className="mt-4">
+          <Lottie animationData={painting} className="mobile" />
         </Col>
       </Row>
       <Row>
@@ -138,7 +135,7 @@ const AboutUs = () => {
       </Row>
       <Row>
         <Col sm={4} className="mt-0">
-          <Lottie animationData={cleaning} />
+          <Lottie animationData={cleaning} className="desktop" />
         </Col>
         <Col sm={8} className="p-5 mt-5">
           <h2>Deep Home Cleaning</h2>
@@ -149,6 +146,9 @@ const AboutUs = () => {
             help. While it may be a messy job, the payoff is huge. So, stop
             putting this necessary cleaning aside!
           </h5>
+        </Col>
+        <Col sm={4} className="mt-0">
+          <Lottie animationData={cleaning} className="mobile" />
         </Col>
       </Row>
       <Row>

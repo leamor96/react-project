@@ -90,8 +90,12 @@ const ChoresComponent = () => {
               };
               //dispatch addCard(card)
               dispatch(addCard(card));
-              Swal.fire("success", "", "success");
-              closeModal();
+             Swal.fire({
+               title: "Chore successfully added!",
+               icon: "success",
+               confirmButtonColor: "#0dcaf0",
+               confirmButtonText: "OK",
+             }).then(() => closeModal());
             }}
           >
             create chore

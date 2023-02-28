@@ -33,7 +33,7 @@ const responsive = {
 
 const MultiCarousel = () => {
   return (
-    <Carousel responsive={responsive} className='m-5'>
+    <Carousel responsive={responsive} className="m-5">
       <div>
         <CardItem {...card1} />
       </div>

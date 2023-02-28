@@ -6,14 +6,14 @@ import "./AppInfo.css";
 
 const AppInfo = () => {
   return (
-    <div className="text-center p-5">
-      <h1>HOW IT WORKS</h1>
-      <h4>A few simple steps to find your way around our website</h4>
+    <div className="text-center p-xl-5 responsive-container">
+      <h2>HOW IT WORKS</h2>
+      <h5>A few simple steps to find your way around our website</h5>
       <Container className="p-4">
-        <Row>
+        <Row className="gap-3 gap-xl-0">
           <Col xs={12} sm={6} md={4}>
             <Card className="card-sizing">
-              <Card.Body className="m-3">
+              <Card.Body className="m-xl-3">
                 <Card.Title className="text-left text-bg-secondary">
                   Go to Chores page
                 </Card.Title>
@@ -27,7 +27,7 @@ const AppInfo = () => {
           </Col>
           <Col xs={12} sm={6} md={4}>
             <Card className="card-sizing">
-              <Card.Body className="m-3">
+              <Card.Body className="m-xl-3">
                 <Card.Title className="text-left text-bg-secondary">
                   Click on the list icon
                 </Card.Title>
@@ -41,7 +41,7 @@ const AppInfo = () => {
           </Col>
           <Col xs={12} sm={6} md={4}>
             <Card className="card-sizing">
-              <Card.Body className="m-3">
+              <Card.Body className="m-xl-3">
                 <Card.Title className="text-left text-bg-secondary">
                   Go to My Custom List page
                 </Card.Title>

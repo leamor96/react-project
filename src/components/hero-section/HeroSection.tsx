@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <Container className="mt-4">
+    <Container className="mt-xl-4">
       <Row>
         <Col sm={7} className="p-5 mt-xl-1">
           <h1>Welocome to HOUSEkeep,</h1>
@@ -23,7 +23,7 @@ const HeroSection = () => {
             More about HOUSEkeep
           </Link>
         </Col>
-        <Col sm={5} className="mt-4">
+        <Col sm={5} className="mt-xl-4 mb-4">
           <Lottie animationData={home} />
         </Col>
       </Row>

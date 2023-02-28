@@ -1,20 +1,23 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { chores } from "../../data/cards";
+import { useAppSelector } from "../../app/hooks";
 
 const CardDetails = () => {
   const nav = useNavigate();
   const { id } = useParams();
-  const chore = chores.find((c) => c.id === id);
-  if (!chore) {
-    return <div>Chore not found</div>;
+  // Use the useSelector hook to get the cards from the Redux store
+  const cards = useAppSelector((state) => state.cards.cards);
+  const card = cards.find((c) => c.id === id);
+
+  if (!card) {
+    return <div>Card not found</div>;
   }
 
   return (
     <div className="card p-5 m-5 mx-auto">
-      <h1>{chore.name}</h1>
-      <h3>{chore.tag}</h3>
+      <h1>{card.name}</h1>
+      <h3>{card.tag}</h3>
       <hr />
-      <p>{chore.description}</p>
+      <p>{card.description}</p>
       <div>
         <button
           className="btn btn-info text-white"

@@ -14,12 +14,14 @@ const Quotes = () => {
     getQuotes();
   }, []);
   return (
-    <div className="quoteContainer">
+    <div className="quoteContainer mt-4 mt-md-0">
       <div className="quote">
         <p>"{quotes.text}"</p>
         <p>{quotes.author}</p>
         <div className="btnContainer">
-            <button onClick={getQuotes} className="btnQuote">Get Quote</button>
+          <button onClick={getQuotes} className="btnQuote">
+            Get Quote
+          </button>
         </div>
       </div>
     </div>
