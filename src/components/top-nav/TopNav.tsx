@@ -7,16 +7,18 @@ import { RxHome } from "react-icons/rx";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { CgUserList } from "react-icons/cg";
 
-import css from "./TopNav.module.scss"
+import "./TopNav.css"
 
 const TopNav = () => {
   return (
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">HOUSEkeep</Navbar.Brand>
+        <Navbar.Brand className="brand" href="/">
+          HOUSE<span className="brand-highlight">keep</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <div className={css.spacer}></div>
+          <div className="spacer"></div>
           <Nav className="me-auto ms-5">
             <NavLink className="nav-link" to="/">
               <RxHome />
