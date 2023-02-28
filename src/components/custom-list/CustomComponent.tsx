@@ -49,7 +49,7 @@ const CostumeComponent = () => {
         )}
       </Container>
       <Container>
-        <h2 className="text-center p-xl-1">My Chores Custom List</h2>
+        <h2 className="text-center p-xl-1 mt-3 mt-md-0">My Chores Custom List</h2>
         {filteredChores.length > 0 ? (
           <div className="d-flex flex-wrap justify-content-center">
             {filteredChores.map((c) => (

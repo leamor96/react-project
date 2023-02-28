@@ -19,7 +19,7 @@ const AboutUs = () => {
           HOUSEkeep helps you orgenize a costume household chores list to make
           sure you maintain your house properly.
         </p>
-        <Accordion className="accordion-container">
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header className="accordion-header">
               Why a household chores list is important?

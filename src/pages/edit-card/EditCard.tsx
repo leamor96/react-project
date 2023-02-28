@@ -35,7 +35,7 @@ const EditCard = () => {
       <br />
       <div className="label-input d-flex flex-column">
         <label htmlFor="description">Chore Description:</label>
-        <input
+        <textarea
           id="description"
           value={description}
           onChange={(e) => {

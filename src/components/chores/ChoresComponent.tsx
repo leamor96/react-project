@@ -39,8 +39,14 @@ const ChoresComponent = () => {
         onRequestClose={closeModal}
         isOpen={isOpen}
         className="border-0 mt-5"
-      >
-        <div className="card w-75 mx-auto p-2">
+     style={{
+    overlay: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+   }}>
+        <div className="card p-4">
           <button className="btn ms-auto" onClick={closeModal}>
             <AiOutlineClose />
           </button>
@@ -55,7 +61,7 @@ const ChoresComponent = () => {
           <label htmlFor="description" className="p-2">
             description:
           </label>
-          <input
+          <textarea
             value={description}
             onChange={(e) => setDescription(e.currentTarget.value)}
           />

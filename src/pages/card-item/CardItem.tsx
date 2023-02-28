@@ -13,19 +13,17 @@ const CardItem = (props: Card) => {
 
   return (
     <div className="card p-5 m-2 card-size">
-      <button
-        style={{ position: "absolute", top: "10px", right: "10px" }}
-        className="border-0 bg-transparent"
+      <button className="border-0 bg-transparent favorite-icon"
         onClick={() => dispatch(toggleFavorite(props.id))}
       >
-        {!props.isFavorite && <BiTaskX style={{ fontSize: "30px" }} />}
-        {props.isFavorite && <BiTask style={{ fontSize: "30px" }} />}
+        {!props.isFavorite && <BiTaskX/>}
+        {props.isFavorite && <BiTask />}
       </button>
       <div style={{ position: "relative", height: "100%" }}>
         <h2 className="cardTitle">{props.name}</h2>
         <br />
       </div>
-      <div style={{ position: "absolute", bottom: 20, width: "100%" }}>
+      <div className="buttons">
         <button
           className="btn btn-secondary m-1"
           onClick={() => {

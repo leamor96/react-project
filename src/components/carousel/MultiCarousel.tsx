@@ -3,14 +3,14 @@ import "react-multi-carousel/lib/styles.css";
 import { chores } from "../../data/cards";
 import CardItem from "../../pages/card-item/CardItem";
 
-const [card1]= chores.filter(card=>card.id==='12')
-const [card2]= chores.filter(card=>card.id==='34')
-const [card3]= chores.filter(card=>card.id==='56')
-const [card4]= chores.filter(card=>card.id==='106')
-const [card5]= chores.filter(card=>card.id==='91')
-const [card6]= chores.filter(card=>card.id==='10')
-const [card7]= chores.filter(card=>card.id==='103')
-const [card8]= chores.filter(card=>card.id==='104')
+const [card1] = chores.filter((card) => card.id === "12");
+const [card2] = chores.filter((card) => card.id === "34");
+const [card3] = chores.filter((card) => card.id === "56");
+const [card4] = chores.filter((card) => card.id === "106");
+const [card5] = chores.filter((card) => card.id === "91");
+const [card6] = chores.filter((card) => card.id === "10");
+const [card7] = chores.filter((card) => card.id === "103");
+const [card8] = chores.filter((card) => card.id === "104");
 
 const responsive = {
   superLargeDesktop: {
@@ -21,17 +21,12 @@ const responsive = {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
 };
+const MultiCarousel = ({ deviceType }: { deviceType: string }) => {
+  if (deviceType === "mobile") {
+    return null;
+  }
 
-const MultiCarousel = () => {
   return (
     <Carousel responsive={responsive} className="m-5">
       <div>

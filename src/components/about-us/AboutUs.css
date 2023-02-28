@@ -1,20 +1,19 @@
-.accordion-container h1 {
-  font-family: "Henny Penny";
-  color:#0dcaf0;
-  text-align: center;
-}
 .accordion-header button:focus {
   color: #fff !important;
-  background-color:#343a40!important;
+  background-color: #343a40 !important;
 }
-.mobile{
+.mobile {
   display: none;
 }
 @media (max-width: 768px) {
-.desktop{
-display: none;
-}
-.mobile{
-display: block;
-}
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .accordion-header button:focus {
+    color: #fff !important;
+    background-color:#343a40 !important;
+  }
 }

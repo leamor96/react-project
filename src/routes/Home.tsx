@@ -13,7 +13,7 @@ const Home = () => {
         <AppInfo />
       </div>
       <Quotes />
-      <MultiCarousel />
+      <MultiCarousel deviceType={""} />
     </div>
   );
 }

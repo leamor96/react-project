@@ -27,3 +27,16 @@
 .emptyDiv{
   height: 8rem;
 }
+
+.btn{
+  transition: 0.9s all ease-in-out;
+}
+.btn:hover{
+  transform: scale(1.02);
+}
+
+@media (max-width: 767px) {
+  .btn:hover {
+    transform: none;
+  }
+}
