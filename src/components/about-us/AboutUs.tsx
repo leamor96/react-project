@@ -12,7 +12,7 @@ import "./AboutUs.css"
 
 const AboutUs = () => {
   return (
-    <Container className="p-xl-5 mt-3 mt-md-0">
+    <Container className="p-xl-5 p-3 mt-4 mt-md-0">
       <Row className="text-center p-xl-4">
         <h1>About Us</h1>
         <p>

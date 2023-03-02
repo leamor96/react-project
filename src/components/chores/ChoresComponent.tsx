@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Modal from "react-modal";
 import Swal from "sweetalert2";
@@ -11,11 +11,12 @@ const ChoresComponent = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [tag, setTag] = useState<Tag>("Daily");
+  const [isDisabled, setDisabled] = useState(true);
+  useEffect(() => {
+    setDisabled(name.trim().length === 0);
+  }, [name]);
 
-
-  //dispatch:
   const dispatch = useAppDispatch();
-  // 1) boolean state for the modal:
   const [isOpen, setOpen] = useState(false);
   Modal.setAppElement("#root");
   const closeModal = () => {
@@ -39,13 +40,14 @@ const ChoresComponent = () => {
         onRequestClose={closeModal}
         isOpen={isOpen}
         className="border-0 mt-5"
-     style={{
-    overlay: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-   }}>
+        style={{
+          overlay: {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          },
+        }}
+      >
         <div className="card p-4">
           <button className="btn ms-auto" onClick={closeModal}>
             <AiOutlineClose />
@@ -96,13 +98,14 @@ const ChoresComponent = () => {
               };
               //dispatch addCard(card)
               dispatch(addCard(card));
-             Swal.fire({
-               title: "Chore successfully added!",
-               icon: "success",
-               confirmButtonColor: "#0dcaf0",
-               confirmButtonText: "OK",
-             }).then(() => closeModal());
+              Swal.fire({
+                title: "Chore successfully added!",
+                icon: "success",
+                confirmButtonColor: "#0dcaf0",
+                confirmButtonText: "OK",
+              }).then(() => closeModal());
             }}
+            disabled={isDisabled}
           >
             create chore
           </button>

@@ -8,3 +8,19 @@ box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(136, 136, 136, 
   letter-spacing: 0.1rem;
   background-color: black;
 }
+
+
+@media (max-width: 768px){
+  .mobileMode{
+  display: none;
+  max-width: 100%;
+height: auto;
+}
+ .mb-4.mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+  section img{
+  border-radius:0;
+}
+
+}

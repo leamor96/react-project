@@ -19,7 +19,7 @@ const EditCard = () => {
   }
 
   return (
-    <div className="d-flex card p-3 m-2">
+    <div className="card p-3 m-2">
       <h3>Edit</h3>
       <div className="label-input d-flex flex-column">
         <label htmlFor="name">Chore lable</label>
@@ -60,24 +60,24 @@ const EditCard = () => {
         <option value="Exterior">Exterior</option>
       </select>
       <br />
-      <button
-        className="btn btn-info text-light"
-        onClick={() => {
-          //construct the edited Card object:
-          const card: Card = {
-            id: cardToEdit.id,
-            tag: tag as Tag,
-            name: name,
-            description: description,
-            isFavorite: cardToEdit.isFavorite,
-          };
-          dispatch(editCard(card));
-          // send the user back to home page:
-          nav(-1);
-        }}
-      >
-        Finish Editing
-      </button>
+      <div>
+        <button
+          className="btn btn-info text-light"
+          onClick={() => {
+            const card: Card = {
+              id: cardToEdit.id,
+              tag: tag as Tag,
+              name: name,
+              description: description,
+              isFavorite: cardToEdit.isFavorite,
+            };
+            dispatch(editCard(card));
+            nav(-1);
+          }}
+        >
+          Finish Editing
+        </button>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@
   cursor: pointer;
   border-radius: 50%;
   background-color: #6c757d;
-  box-shadow: 0 0.2em 0.8em rgba(0, 0, 0, 0.25);
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -19,6 +19,6 @@
 
 .go-to-top svg {
   color: #fff;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }

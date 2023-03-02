@@ -9,38 +9,45 @@ import "./Footer.css";
 import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <MDBFooter className="text-center text-white bg-dark">
-      <MDBContainer className="p-4">
+      <MDBContainer className="p-0 p-md-4">
         <section>
           <MDBRow>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <img src={windows} className="img-fluid" alt="windows" />
+              <img
+                src={windows}
+                className="img-fluid mobileMode"
+                alt="windows"
+              />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
               <img src={workspace} className="img-fluid" alt="workspace" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <img src={tools} className="img-fluid" alt="tools" />
+              <img src={tools} className="img-fluid mobileMode" alt="tools" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <img src={lawn} className="img-fluid" alt="lawn" />
+              <img src={lawn} className="img-fluid mobileMode" alt="lawn" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <img src={house} className="img-fluid" alt="house" />
+              <img src={house} className="img-fluid mobileMode" alt="house" />
             </MDBCol>
             <MDBCol lg="2" md="12" className="mb-4 mb-md-0">
-              <img src={blinds} className="img-fluid" alt="blinds" />
+              <img src={blinds} className="img-fluid mobileMode" alt="blinds" />
             </MDBCol>
           </MDBRow>
         </section>
       </MDBContainer>
 
       <div className="text-center p-3 footerText">
-        © 2023 Copyright: Lea Ohayon
+        © {currentYear} Copyright: Lea Ohayon
         <a
           href="https://www.linkedin.com/in/lea-ohayon-0938ab265"
           className="p-2"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <BsLinkedin className="mb-1" style={{ fontSize: "20px" }} />
         </a>

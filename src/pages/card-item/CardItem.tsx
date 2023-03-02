@@ -19,9 +19,8 @@ const CardItem = (props: Card) => {
         {!props.isFavorite && <BiTaskX/>}
         {props.isFavorite && <BiTask />}
       </button>
-      <div style={{ position: "relative", height: "100%" }}>
-        <h2 className="cardTitle">{props.name}</h2>
-        <br />
+      <div>
+        <h2 className="cardTitle mt-2">{props.name}</h2>
       </div>
       <div className="buttons">
         <button
