@@ -1,48 +1,40 @@
-# Getting Started with Create React App
+# Frontend with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
 ## Available Scripts
 
-In the project directory, you can run:
+להרצת הפרויקט:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+קישור ישיר לאתר המאוכסן: https://deployreact-a625f.web.app/
 
-### `npm run build`
+## על הפרויקט
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+פרויקט אמצע-ניהול שכבת מידע, בפרויקט זה השתמשתי ב: react,redux,typescript כמו כן עשיתי שימוש בספריות שונות ומגוונות.
+HOUSEKEEP 
+ היא אפליקציה/אתר לניהול מטלות הבית, האפליקציה מכילה עמוד ייעודי לניהול המטלות ובו היא מאפשרת למשתמש להוסיף מטלות חדשות (בעמוד ישנן מטלות קיימות לדוגמא) לערוך/למחוק ולצפות בפרטי המטלה שמוצגת רק בכותרת. כמו כן, המשתמש יכול להוסיף את המטלות הרצויות לתוך עמוד אישי מותאם ע"י לחיצה על אייקון המטלה. בעמוד המותאם אישית ניתן לצפות בכל המטלות שהמשתמש סימן, ניתן למיין אותם לפי טאג(סוג המטלה) וכן ניתן למחוק/לערוך מטלה וללחוץ על האייקון בכדי להסיר את המטלה מהעמוד.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+בדף הראשי של האתר יש הסבר תמציתי על האתר ואופן השימוש בו בצורת מדריך קצר למשתמש, קישור לדף אודות בו יש מידע מורחב ומפורט יותר על סוגים שונים של מטלות בית, וחשיבות הטיפול/שימור הבית.
+כמ"כ בדף הראשי יש שימוש בAPI חיצוני לציטוטי השראה.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+בפרויקט כרגע לא עשיתי שימוש בכניסת משתמשים/הרשמה ולכן גם לא ביצעתי שמירת נתונים בlocal storage, בעתיד ארצה לפתוח אפשרות למשתמש להיכנס עם הרשמה ולשמור נתונים. דברים נוספים שהייתי רוצה לפתח הם: אפשרות למשתמש להכניס מטלות ליומן (במובייל או יומן בגוגל) להגביל זמן לביצוע מטלות, לבחור מידת חשיבות/דחיפות ולסמן מטלות כבוצעו.(פחות היה חשוב לי בשלב הזה כי כיוונתי למשהו יותר כללי ופחות to do list)
 
-### `npm run eject`
+תודה רבה על הזמן שהקדשתם בבדיקת הפרויקט שלי
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+לכל שאלה, ביקורת, פידבק, עצה או טיפ כלשהו אשמח ממש שתפנו אליי!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+לאה אוחיון
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+מס' מחזורW140722MR
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+leamor96@gmail.com
 
-## Learn More
+058-4182639
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# react-project" 
-"# react-project" 
